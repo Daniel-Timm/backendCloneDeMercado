@@ -6,12 +6,10 @@ const PORT = 3001;
 
 app.use(cors());
 
-// Rota 1: A página inicial (http://localhost:3001)
 app.get('/', (req, res) => {
   res.send('O Backend do Meu Mercado está online e funcionando!');
 });
 
-// Rota 2: A API de produtos (http://localhost:3001/produtos)
 app.get('/produtos', (req, res) => {
   const listaDeProdutos = [
     { id: 1, nome: 'Feijão Preto 1kg', preco: 7.90 },
